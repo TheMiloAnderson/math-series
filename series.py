@@ -9,3 +9,11 @@ def fibonacci(n):
     for i in range(n - 1):
         first, second = second, first + second
     return first
+
+
+def lucas(n):
+    """ accepts integer n, returns nth lucas number """
+    first, second = 2, 1
+    for i in range(n - 1):
+        first, second = second, first + second
+    return first
