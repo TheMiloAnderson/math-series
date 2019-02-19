@@ -25,4 +25,3 @@ def sum_series(n, start=0):
     for i in range(n - 1):
         first, second = second, first + second
     return first
-    
