@@ -41,3 +41,24 @@ def test_lucas_7():
     actual = lucas(7)
     expected = 18
     assert actual == expected
+
+
+def test_sum_series_1_0():
+    """ test sum_series first fibonacci """
+    actual = sum_series(1, 0)
+    expected = 0
+    assert actual == expected
+
+
+def test_sum_series_10_2():
+    """ test sum_series 10th lucas """
+    actual = sum_series(10, 2)
+    expected = 76
+    assert actual == expected
+
+
+def test_sum_series_default_fibo():
+    """ test sum_series defaults to fibonacci numbers """
+    actual = sum_series(5)
+    expected = 3
+    assert actual == expected
